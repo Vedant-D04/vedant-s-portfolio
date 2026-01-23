@@ -72,7 +72,12 @@ function App() {
         {
             category: "Languages",
             icon: "💻",
-            skills: ["Python", "C++", "Rust", "JavaScript", "SQL", "MATLAB"]
+            skills: ["Python", "C++", "Rust", "JavaScript", "TypeScript", "SQL", "MATLAB"]
+        },
+        {
+            category: "Full Stack Development",
+            icon: "🌐",
+            skills: ["React", "Next.js", "Node.js", "Express", "HTML5", "CSS3", "Tailwind CSS", "Vite", "REST APIs", "MongoDB"]
         },
         {
             category: "AI / Machine Learning",
@@ -95,9 +100,9 @@ function App() {
             skills: ["IBM Qiskit", "QRNG", "Quantum Cryptography"]
         },
         {
-            category: "Cloud & Tools",
+            category: "Cloud & DevOps",
             icon: "☁️",
-            skills: ["Git", "Docker", "Azure", "Streamlit", "Next.js"]
+            skills: ["Git", "Docker", "Azure", "Vercel", "AWS", "CI/CD", "Streamlit"]
         }
     ];
 
