@@ -1433,6 +1433,158 @@ body {
     top: 0.35rem;
 }
 
+/* ==================== Medium Blog Section ==================== */
+.blog-section {
+    background: transparent;
+}
+
+.blog-intro {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.blog-card {
+    background: var(--bg-card);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    cursor: pointer;
+    animation: gentle-float 12s ease-in-out infinite;
+}
+
+.blog-card:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.blog-card:nth-child(2) {
+    animation-delay: -2s;
+}
+
+.blog-card:nth-child(3) {
+    animation-delay: -4s;
+}
+
+.blog-card:nth-child(4) {
+    animation-delay: -6s;
+}
+
+.blog-card:nth-child(5) {
+    animation-delay: -8s;
+}
+
+.blog-card:nth-child(6) {
+    animation-delay: -3s;
+}
+
+.blog-card:nth-child(7) {
+    animation-delay: -5s;
+}
+
+.blog-card:hover {
+    border-color: var(--royal);
+    box-shadow: 0 15px 40px rgba(30, 64, 175, 0.25);
+    animation-play-state: paused;
+}
+
+.blog-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog-icon {
+    font-size: 1.25rem;
+}
+
+.blog-date {
+    font-size: 0.8rem;
+    color: var(--accent-light);
+    font-weight: 500;
+}
+
+.blog-title {
+    font-size: 1.05rem;
+    color: var(--text-primary);
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.blog-description {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.blog-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.blog-tag {
+    padding: 0.25rem 0.6rem;
+    background: rgba(30, 64, 175, 0.15);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    border-radius: 50px;
+    font-size: 0.7rem;
+    color: var(--star-blue);
+    font-weight: 500;
+}
+
+.blog-read-more {
+    font-size: 0.85rem;
+    color: var(--accent-light);
+    font-weight: 600;
+    margin-top: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.blog-card:hover .blog-read-more {
+    color: var(--star-blue);
+}
+
+.view-all-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 2rem;
+    background: rgba(30, 64, 175, 0.2);
+    border: 1px solid var(--royal);
+    border-radius: 0.75rem;
+    color: var(--accent-light);
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.view-all-btn:hover {
+    background: var(--royal);
+    color: white;
+    box-shadow: 0 8px 30px var(--accent-glow);
+}
+
+.view-all-btn svg {
+    fill: currentColor;
+}
+
 /* ==================== Enhanced Deep Space Floating Animation ==================== */
 @keyframes deep-space-float {
 

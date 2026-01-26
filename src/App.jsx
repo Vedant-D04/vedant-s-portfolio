@@ -261,6 +261,58 @@ function App() {
         }
     ];
 
+    const mediumBlogs = [
+        {
+            title: "The Physical Turing Test: NVIDIA's Vision for Embodied AI",
+            date: "Jul 18, 2025",
+            description: "Exploring NVIDIA's groundbreaking approach to testing AI through physical embodiment and real-world interaction.",
+            tags: ["AI", "NVIDIA", "Robotics"],
+            link: "https://medium.com/@vedant050626"
+        },
+        {
+            title: "My First Drone Competition Experience: From Beginner to Podium Finish",
+            date: "Mar 7, 2025",
+            description: "A personal journey through my first drone competition, sharing lessons learned and the thrill of achievement.",
+            tags: ["Drones", "Competition", "Experience"],
+            link: "https://medium.com/@vedant050626"
+        },
+        {
+            title: "Understanding Retrieval-Augmented Generation (RAG) with an easy example",
+            date: "Feb 26, 2025",
+            description: "Breaking down RAG architecture with practical examples to help you understand this powerful AI technique.",
+            tags: ["RAG", "LLM", "AI"],
+            link: "https://medium.com/@vedant050626"
+        },
+        {
+            title: "Ever Wondered What Your Deep Learning Model Sees? Let's Find Out!",
+            date: "Feb 21, 2025",
+            description: "Diving into model interpretability and visualization techniques to understand neural network predictions.",
+            tags: ["Deep Learning", "XAI", "Visualization"],
+            link: "https://medium.com/@vedant050626"
+        },
+        {
+            title: "Are Vision Transformers Failing in the Real World?",
+            date: "Feb 16, 2025",
+            description: "Analyzing the practical challenges and limitations of Vision Transformers in production environments.",
+            tags: ["ViT", "Computer Vision", "Research"],
+            link: "https://medium.com/@vedant050626"
+        },
+        {
+            title: "Quantum Random Number Based Password Generation",
+            date: "Feb 13, 2025",
+            description: "Exploring quantum computing applications in cryptography through QRNG-based secure password generation.",
+            tags: ["Quantum", "Cryptography", "Qiskit"],
+            link: "https://medium.com/@vedant050626"
+        },
+        {
+            title: "Understanding Different Types of Convolutional Neural Networks and Their Use Cases",
+            date: "Feb 2025",
+            description: "A comprehensive guide to CNN architectures and their real-world applications in computer vision.",
+            tags: ["CNN", "Deep Learning", "Tutorial"],
+            link: "https://medium.com/@vedant050626"
+        }
+    ];
+
     return (
         <div className="app" ref={containerRef}>
             {/* Animated Background */}
@@ -801,6 +853,77 @@ function App() {
                 </div>
             </section>
 
+            {/* Medium Blog Section */}
+            <section className="section blog-section" id="blog">
+                <div className="section-container">
+                    <motion.div
+                        className="section-header"
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                    >
+                        <span className="section-label">Writing</span>
+                        <h2 className="section-title">Medium Blog</h2>
+                    </motion.div>
+
+                    <motion.p
+                        className="blog-intro"
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        viewport={{ once: true }}
+                    >
+                        I write about AI, machine learning, and my tech journey. Check out my latest articles.
+                    </motion.p>
+
+                    <div className="blog-grid">
+                        {mediumBlogs.map((blog, i) => (
+                            <motion.a
+                                key={i}
+                                href={blog.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="blog-card"
+                                initial={{ opacity: 0, y: 30 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: i * 0.08 }}
+                                whileHover={{ y: -8, scale: 1.02 }}
+                            >
+                                <div className="blog-card-header">
+                                    <span className="blog-icon">📝</span>
+                                    <span className="blog-date">{blog.date}</span>
+                                </div>
+                                <h3 className="blog-title">{blog.title}</h3>
+                                <p className="blog-description">{blog.description}</p>
+                                <div className="blog-tags">
+                                    {blog.tags.map((tag) => (
+                                        <span key={tag} className="blog-tag">{tag}</span>
+                                    ))}
+                                </div>
+                                <span className="blog-read-more">
+                                    Read on Medium →
+                                </span>
+                            </motion.a>
+                        ))}
+                    </div>
+
+                    <motion.a
+                        href="https://medium.com/@vedant050626"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="view-all-btn"
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        whileHover={{ scale: 1.05 }}
+                    >
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                            <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z" />
+                        </svg>
+                        View All on Medium
+                    </motion.a>
+                </div>
+            </section>
 
             {/* Contact Section */}
             <section className="section contact-section" id="contact">
