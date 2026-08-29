@@ -15,6 +15,20 @@ const FadeIn = ({ children, delay = 0 }) => (
 function App() {
     return (
         <div className="app">
+            {/* Navigation Bar */}
+            <nav className="navbar">
+                <div className="nav-container">
+                    <a href="#hero" className="nav-logo">Vedant Desai</a>
+                    <div className="nav-links">
+                        <a href="#education">Background</a>
+                        <a href="#experience">Work</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#publications">Research</a>
+                        <a href="#certifications">Awards</a>
+                    </div>
+                </div>
+            </nav>
+
             {/* Hero Section */}
             <section className="section hero-section" id="hero">
                 <div className="hero-container">
@@ -324,6 +338,7 @@ function App() {
 
             <footer className="site-footer">
                 <div className="footer-content">
+                    <h4 className="footer-heading">Contact Me</h4>
                     <div className="footer-links">
                         <a href="https://www.instagram.com/vedant.a.desai/" target="_blank" rel="noopener noreferrer">Instagram</a>
                         <a href="https://www.linkedin.com/in/desaivedant" target="_blank" rel="noopener noreferrer">LinkedIn</a>
@@ -331,9 +346,6 @@ function App() {
                         <a href="mailto:vedant050626@gmail.com">vedant050626@gmail.com</a>
                         <a href="tel:+13323215594">+1 332 321 5594</a>
                     </div>
-                    <p className="copyright">
-                        © {new Date().getFullYear()} Vedant Desai.
-                    </p>
                 </div>
             </footer>
         </div>
