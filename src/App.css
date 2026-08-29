@@ -431,28 +431,253 @@
     font-size: 0.9rem;
 }
 
+/* ==================== Hamburger Button (hidden on desktop) ==================== */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    z-index: 1001;
+}
+
+.hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--text-darkest);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.hamburger.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
 /* ==================== Media Queries ==================== */
+
+/* Tablet */
 @media (max-width: 900px) {
     .hero-container {
         grid-template-columns: 1fr;
-        text-align: left;
+        gap: 2rem;
+    }
+
+    .hero-photo-wrapper {
+        order: -1;
+    }
+
+    .photo-frame {
+        width: 220px;
+        height: 220px;
     }
     
     .hero-name {
-        font-size: 3.5rem;
+        font-size: 3rem;
+    }
+
+    .hero-title {
+        font-size: 1.2rem;
+    }
+
+    .hero-bio {
+        font-size: 1rem;
     }
     
+    .section-title {
+        font-size: 2rem;
+    }
+
     .skills-container {
         grid-template-columns: 1fr;
     }
 }
 
-@media (max-width: 600px) {
-    .section {
-        padding: 4rem 1.5rem;
+/* Mobile */
+@media (max-width: 640px) {
+    .app {
+        padding-bottom: 0; /* footer will scroll with content */
     }
-    
+
+    /* Navbar mobile */
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-container {
+        padding: 0.75rem 1.25rem;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background: var(--bg-white);
+        flex-direction: column;
+        padding: 5rem 2rem 2rem;
+        gap: 1.5rem;
+        box-shadow: -4px 0 15px rgba(0,0,0,0.08);
+        transition: right 0.3s ease;
+        z-index: 999;
+    }
+
+    .nav-links.show {
+        right: 0;
+    }
+
+    .nav-links a {
+        font-size: 1.1rem;
+    }
+
+    /* Sections */
+    .section {
+        padding: 3rem 1.25rem;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+        margin-bottom: 2rem;
+    }
+
+    /* Hero */
+    .hero-section {
+        min-height: auto;
+        padding-top: 2rem;
+    }
+
+    .hero-container {
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .hero-info {
+        max-width: 100%;
+    }
+
+    .hero-name {
+        font-size: 2.5rem;
+    }
+
+    .hero-title {
+        font-size: 1.05rem;
+    }
+
+    .hero-bio {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .hero-contact {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    .hero-socials {
+        justify-content: center;
+    }
+
+    .photo-frame {
+        width: 180px;
+        height: 180px;
+    }
+
+    .photo-border {
+        top: -8px;
+        left: -8px;
+        right: -8px;
+        bottom: -8px;
+    }
+
+    /* Cards */
     .grid-container {
         grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+
+    /* Timeline */
+    .timeline {
+        margin-left: 0.5rem;
+        padding-left: 1.5rem;
+    }
+
+    .timeline-item::before {
+        left: -1.85rem;
+        width: 10px;
+        height: 10px;
+    }
+
+    .timeline-title {
+        font-size: 1.1rem;
+    }
+
+    .timeline-org {
+        font-size: 0.9rem;
+    }
+
+    .timeline-desc,
+    .timeline-desc li {
+        font-size: 0.9rem;
+    }
+
+    /* Skills */
+    .skills-container {
+        gap: 2rem;
+    }
+
+    .skill-tag {
+        padding: 0.3rem 0.75rem;
+        font-size: 0.8rem;
+    }
+
+    /* Publications */
+    .pub-title {
+        font-size: 1.05rem;
+    }
+
+    .pub-desc, .pub-meta {
+        font-size: 0.85rem;
+    }
+
+    /* Footer - not fixed on mobile, scrolls with page */
+    .site-footer {
+        position: relative;
+        padding: 1.5rem 1.25rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 0.75rem;
+        text-align: center;
+    }
+
+    .footer-links {
+        gap: 0.75rem;
+        flex-direction: column;
+    }
+
+    .footer-links a {
+        font-size: 0.85rem;
+    }
+
+    .footer-heading {
+        font-size: 1rem;
     }
 }

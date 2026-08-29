@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import './App.css';
 
@@ -13,18 +14,29 @@ const FadeIn = ({ children, delay = 0 }) => (
 );
 
 function App() {
+    const [menuOpen, setMenuOpen] = useState(false);
+
     return (
         <div className="app">
             {/* Navigation Bar */}
             <nav className="navbar">
                 <div className="nav-container">
                     <a href="#hero" className="nav-logo">Vedant Desai</a>
-                    <div className="nav-links">
-                        <a href="#education">Background</a>
-                        <a href="#experience">Work</a>
-                        <a href="#projects">Projects</a>
-                        <a href="#publications">Research</a>
-                        <a href="#certifications">Awards</a>
+                    <button
+                        className={`hamburger ${menuOpen ? 'open' : ''}`}
+                        onClick={() => setMenuOpen(!menuOpen)}
+                        aria-label="Toggle menu"
+                    >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div className={`nav-links ${menuOpen ? 'show' : ''}`}>
+                        <a href="#education" onClick={() => setMenuOpen(false)}>Background</a>
+                        <a href="#experience" onClick={() => setMenuOpen(false)}>Work</a>
+                        <a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a>
+                        <a href="#publications" onClick={() => setMenuOpen(false)}>Research</a>
+                        <a href="#certifications" onClick={() => setMenuOpen(false)}>Awards</a>
                     </div>
                 </div>
             </nav>
