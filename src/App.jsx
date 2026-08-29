@@ -322,10 +322,19 @@ function App() {
                 </div>
             </section>
 
-            <footer className="section" style={{ padding: '2rem', textAlign: 'center', borderTop: '1px solid var(--border)' }}>
-                <p style={{ color: 'var(--text-gray)', fontSize: '0.9rem' }}>
-                    © {new Date().getFullYear()} Vedant Desai. Minimalist Portfolio.
-                </p>
+            <footer className="site-footer">
+                <div className="footer-content">
+                    <div className="footer-links">
+                        <a href="https://www.instagram.com/vedant.a.desai/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                        <a href="https://www.linkedin.com/in/desaivedant" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        <a href="mailto:vad6929@nyu.edu">vad6929@nyu.edu</a>
+                        <a href="mailto:vedant050626@gmail.com">vedant050626@gmail.com</a>
+                        <a href="tel:+13323215594">+1 332 321 5594</a>
+                    </div>
+                    <p className="copyright">
+                        © {new Date().getFullYear()} Vedant Desai.
+                    </p>
+                </div>
             </footer>
         </div>
     );
