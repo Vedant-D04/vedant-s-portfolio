@@ -203,6 +203,15 @@ function App() {
                 <div className="grid-container">
                     <FadeIn delay={0.1}>
                         <div className="card project-card">
+                            <h3>Neuromorphic World Models <span className="status-badge ongoing">Ongoing</span></h3>
+                            <ul>
+                                <li>Exploring the creation of V-JEPA–inspired predictive world models built on neuromorphic (event-camera) data, with initial simulation work in MuJoCo.</li>
+                                <li>Currently paused due to relocation to NYC; planned to resume once graduate studies begin at NYU and necessary compute resources are available.</li>
+                            </ul>
+                        </div>
+                    </FadeIn>
+                    <FadeIn delay={0.2}>
+                        <div className="card project-card">
                             <h3>Cinemind - AI-Based Film Director Assistant</h3>
                             <ul>
                                 <li>Built an AI assistant for film scene analysis using YOLOv5, MediaPipe, and a custom PyTorch CNN for facial emotion recognition.</li>
@@ -210,7 +219,7 @@ function App() {
                             </ul>
                         </div>
                     </FadeIn>
-                    <FadeIn delay={0.2}>
+                    <FadeIn delay={0.3}>
                         <div className="card project-card">
                             <h3>Instagram Content Performance Analyzer</h3>
                             <ul>
@@ -218,7 +227,7 @@ function App() {
                             </ul>
                         </div>
                     </FadeIn>
-                    <FadeIn delay={0.3}>
+                    <FadeIn delay={0.4}>
                         <div className="card project-card">
                             <h3>YesterdayLand</h3>
                             <ul>
@@ -227,7 +236,7 @@ function App() {
                             </ul>
                         </div>
                     </FadeIn>
-                    <FadeIn delay={0.4}>
+                    <FadeIn delay={0.5}>
                         <div className="card project-card">
                             <h3>Kurukshetra Simulation</h3>
                             <ul>
@@ -235,20 +244,11 @@ function App() {
                             </ul>
                         </div>
                     </FadeIn>
-                    <FadeIn delay={0.5}>
-                        <div className="card project-card">
-                            <h3>3D Reconstruction and Asset Generation</h3>
-                            <ul>
-                                <li>Applied 2D/3D Gaussian Splatting for scene reconstruction and ModDiff AI-assisted 3D asset generation workflows to create realistic 3D environments from image data.</li>
-                            </ul>
-                        </div>
-                    </FadeIn>
                     <FadeIn delay={0.6}>
                         <div className="card project-card">
-                            <h3>Neuromorphic World Models <span className="status-badge on-hold">On Hold</span></h3>
+                            <h3>Asset Generation</h3>
                             <ul>
-                                <li>Exploring the creation of V-JEPA–inspired predictive world models built on neuromorphic (event-camera) data, with initial simulation work in MuJoCo.</li>
-                                <li>Currently paused due to relocation to NYC; planned to resume once graduate studies begin at NYU and necessary compute resources are available.</li>
+                                <li>Used ModDiff AI-assisted 3D asset generation workflows to create realistic assets for Unity worlds.</li>
                             </ul>
                         </div>
                     </FadeIn>
