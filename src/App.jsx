@@ -243,6 +243,15 @@ function App() {
                             </ul>
                         </div>
                     </FadeIn>
+                    <FadeIn delay={0.6}>
+                        <div className="card project-card">
+                            <h3>Neuromorphic World Models <span className="status-badge on-hold">On Hold</span></h3>
+                            <ul>
+                                <li>Exploring the creation of V-JEPA–inspired predictive world models built on neuromorphic (event-camera) data, with initial simulation work in MuJoCo.</li>
+                                <li>Currently paused due to relocation to NYC; planned to resume once graduate studies begin at NYU and necessary compute resources are available.</li>
+                            </ul>
+                        </div>
+                    </FadeIn>
                 </div>
             </section>
 
@@ -252,6 +261,13 @@ function App() {
                     <h2 className="section-title">Publications and Research</h2>
                 </FadeIn>
                 <div className="publications-list">
+                    <FadeIn delay={0.05}>
+                        <div className="pub-item">
+                            <h3 className="pub-title">Comparing 2D Gaussian Splatting and Photogrammetric Meshes for Interactive 3D Reconstruction <span className="status-badge ongoing">Ongoing</span></h3>
+                            <div className="pub-meta">Ongoing Research</div>
+                            <p className="pub-desc">Comparing meshes derived from 2DGS with conventional photogrammetric meshes across three first-hand image datasets. Provides evidence that glossy dark surfaces produce depth-biased holing artifacts in 2DGS, and demonstrates that geometry-aware capture is needed to reduce occlusion-driven meshing artifacts. Results show photogrammetry produces more metrically accurate and structurally reliable meshes.</p>
+                        </div>
+                    </FadeIn>
                     <FadeIn delay={0.1}>
                         <div className="pub-item">
                             <h3 className="pub-title">Efficient Facial Emotion Recognition Using Residual Squeeze-and-Excitation and Enhanced Inception Networks (2026)</h3>
