@@ -369,33 +369,38 @@
 }
 
 /* ==================== Publications ==================== */
+.publications-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
 .pub-item {
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 2.5rem;
     border-bottom: 1px solid var(--border);
 }
 
 .pub-item:last-child {
     border-bottom: none;
-    margin-bottom: 0;
     padding-bottom: 0;
 }
 
 .pub-title {
     font-size: 1.15rem;
     color: var(--text-darkest);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
 }
 
 .pub-meta {
     font-size: 0.9rem;
     color: var(--text-gray);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
 }
 
 .pub-desc {
     font-size: 0.95rem;
     color: var(--text-dark);
+    line-height: 1.7;
 }
 
 /* ==================== Badges ==================== */
