@@ -205,12 +205,22 @@ function App() {
                         <div className="card project-card">
                             <h3>Neuromorphic World Models <span className="status-badge ongoing">Ongoing</span></h3>
                             <ul>
-                                <li>Exploring the creation of V-JEPA–inspired predictive world models built on neuromorphic (event-camera) data, with initial simulation work in MuJoCo.</li>
+                                <li>Exploring the creation of V-JEPA–inspired predictive world models built on neuromorphic (event-camera) data.</li>
                                 <li>Currently paused due to relocation to NYC; planned to resume once graduate studies begin at NYU and necessary compute resources are available.</li>
                             </ul>
                         </div>
                     </FadeIn>
-                    <FadeIn delay={0.2}>
+                    <FadeIn delay={0.15}>
+                        <div className="card project-card">
+                            <h3>MuJoCo Simulation Experiments</h3>
+                            <ul>
+                                <li>Completed hands-on tutorials from the official MuJoCo documentation, covering physics simulation fundamentals, MJCF model definition, and contact dynamics.</li>
+                                <li>Built exploratory environments for robotic object manipulation (pick-and-place, grasping) and locomotion tasks using MuJoCo's native Python bindings.</li>
+                                <li>Experimented with JAX-accelerated simulation via MuJoCo MJX for batched rollouts, and explored NVIDIA Warp for differentiable physics workflows.</li>
+                            </ul>
+                        </div>
+                    </FadeIn>
+                    <FadeIn delay={0.25}>
                         <div className="card project-card">
                             <h3>Cinemind - AI-Based Film Director Assistant</h3>
                             <ul>
@@ -219,7 +229,7 @@ function App() {
                             </ul>
                         </div>
                     </FadeIn>
-                    <FadeIn delay={0.3}>
+                    <FadeIn delay={0.35}>
                         <div className="card project-card">
                             <h3>Instagram Content Performance Analyzer</h3>
                             <ul>
@@ -227,7 +237,7 @@ function App() {
                             </ul>
                         </div>
                     </FadeIn>
-                    <FadeIn delay={0.4}>
+                    <FadeIn delay={0.45}>
                         <div className="card project-card">
                             <h3>YesterdayLand</h3>
                             <ul>
@@ -236,7 +246,7 @@ function App() {
                             </ul>
                         </div>
                     </FadeIn>
-                    <FadeIn delay={0.5}>
+                    <FadeIn delay={0.55}>
                         <div className="card project-card">
                             <h3>Kurukshetra Simulation</h3>
                             <ul>
@@ -244,7 +254,7 @@ function App() {
                             </ul>
                         </div>
                     </FadeIn>
-                    <FadeIn delay={0.6}>
+                    <FadeIn delay={0.65}>
                         <div className="card project-card">
                             <h3>Asset Generation</h3>
                             <ul>
