@@ -121,20 +121,55 @@
 
 .hero-contact {
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
     margin-bottom: 2.5rem;
-    font-size: 0.95rem;
+    align-items: center;
+}
+
+.contact-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
     color: var(--text-gray);
-}
-
-.hero-contact a {
-    color: inherit;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.3s ease;
     text-decoration: none;
-    transition: color 0.2s ease;
 }
 
-.hero-contact a:hover {
-    color: var(--text-darkest);
+.contact-icon:hover {
+    color: var(--accent);
+    background: rgba(255, 255, 255, 0.12);
+    border-color: var(--accent);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-icon::after {
+    content: attr(title);
+    position: absolute;
+    bottom: -32px;
+    left: 50%;
+    transform: translateX(-50%) translateY(4px);
+    background: var(--bg-card);
+    color: var(--text-light);
+    font-size: 0.72rem;
+    padding: 4px 10px;
+    border-radius: 6px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.contact-icon:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
 }
 
 .hero-socials {
@@ -613,9 +648,8 @@
     }
 
     .hero-contact {
-        flex-direction: column;
-        gap: 0.5rem;
-        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
     }
 
     .hero-socials {

@@ -57,16 +57,22 @@ function App() {
 
                         <FadeIn delay={0.2}>
                             <div className="hero-contact">
-                                <span>📍 NYC</span>
-                                <a href="mailto:vedant050626@gmail.com">vedant050626@gmail.com</a>
-                                <span>+91-8828193785</span>
+                                <a href="https://maps.google.com/?q=New+York+City" target="_blank" rel="noopener noreferrer" className="contact-icon" title="NYC" aria-label="Location: NYC">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                </a>
+                                <a href="mailto:vad6929@nyu.edu" className="contact-icon" title="vad6929@nyu.edu" aria-label="Email: vad6929@nyu.edu">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                                </a>
+                                <a href="tel:+13323215594" className="contact-icon" title="+1 332 321 5594" aria-label="Phone: +1 332 321 5594">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                </a>
                             </div>
                         </FadeIn>
                         
                         <FadeIn delay={0.3}>
                             <p className="hero-bio">
-                                Incoming Master's student at <span className="accent">NYU Courant</span> (Fall 2026). 
-                                Final-year Computer Science and Business Systems student at NMIMS University with a strong research foundation in <span className="accent">deep learning</span>, <span className="accent">computer vision</span>, and <span className="accent">NLP</span>, backed by IEEE-published and CRC Press-published work. Experienced in designing and fine-tuning neural network architectures, building production-level AI systems, and translating research methods into applied ML solutions. Seeking a Research Scientist or AI Research role at a Big Tech organization where rigorous methodology and novel system design are valued.
+                                First-year Master's student in Computer Science at <span className="accent">NYU Courant</span>. 
+                                Graduate of NMIMS University in Computer Science and Business Systems with a strong research foundation in <span className="accent">deep learning</span>, <span className="accent">computer vision</span>, and <span className="accent">NLP</span>, backed by IEEE-published and CRC Press-published work. Experienced in designing and fine-tuning neural network architectures, building production-level AI systems, and translating research methods into applied ML solutions. Seeking a Research Scientist or AI Research role at a Big Tech organization where rigorous methodology and novel system design are valued.
                             </p>
                         </FadeIn>
 
@@ -102,9 +108,12 @@ function App() {
                 <div className="timeline">
                     <FadeIn delay={0.05}>
                         <div className="timeline-item">
-                            <span className="timeline-period">Starting Sept 2, 2026</span>
+                            <span className="timeline-period">Sept 2026 – Present</span>
                             <h3 className="timeline-title">Master of Science in Computer Science</h3>
                             <div className="timeline-org">Courant Institute of Mathematical Sciences, New York University (NYU)</div>
+                            <div className="timeline-desc">
+                                <p><strong>First Semester Courses:</strong> Programming Languages, Fundamental Algorithms, and Efficient AI Computing</p>
+                            </div>
                         </div>
                     </FadeIn>
                     <FadeIn delay={0.1}>
@@ -381,7 +390,6 @@ function App() {
                         <a href="https://www.instagram.com/vedant.a.desai/" target="_blank" rel="noopener noreferrer">Instagram</a>
                         <a href="https://www.linkedin.com/in/desaivedant" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                         <a href="mailto:vad6929@nyu.edu">vad6929@nyu.edu</a>
-                        <a href="mailto:vedant050626@gmail.com">vedant050626@gmail.com</a>
                         <a href="tel:+13323215594">+1 332 321 5594</a>
                     </div>
                 </div>
