@@ -296,6 +296,21 @@
     line-height: 1.7;
 }
 
+.timeline-desc a,
+.course-link {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    font-weight: 500;
+    transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.timeline-desc a:hover,
+.course-link:hover {
+    color: var(--accent-light);
+    opacity: 0.85;
+}
+
 .timeline-desc ul {
     list-style-type: disc;
     padding-left: 1.5rem;

@@ -112,7 +112,12 @@ function App() {
                             <h3 className="timeline-title">Master of Science in Computer Science</h3>
                             <div className="timeline-org">Courant Institute of Mathematical Sciences, New York University (NYU)</div>
                             <div className="timeline-desc">
-                                <p><strong>First Semester Courses:</strong> Programming Languages, Fundamental Algorithms, and Efficient AI Computing</p>
+                                <p>
+                                    <strong>First Semester Courses:</strong>{' '}
+                                    <a href="https://cs.nyu.edu/home/courses/descriptions/#csci-ga2110-001" target="_blank" rel="noopener noreferrer" className="course-link">CSCI-GA.2110 Programming Languages</a>,{' '}
+                                    <a href="https://cs.nyu.edu/home/courses/descriptions/#csci-ga1170-001" target="_blank" rel="noopener noreferrer" className="course-link">CSCI-GA.1170 Fundamental Algorithms</a>, and{' '}
+                                    <a href="https://www.saiqianzhang.com/COURSE/" target="_blank" rel="noopener noreferrer" className="course-link">CSCI-GA.3033 Efficient AI Computing</a>
+                                </p>
                             </div>
                         </div>
                     </FadeIn>
